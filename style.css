@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "marion";
+    src: url("fonts/Marion\ Regular.ttf") format("truetype");
+}
+
+header{
+    height: 100vh;
+}
+
+h1{
+    position: absolute;
+    top: 50vh;
+    right: 50vw;
+    font-family: marion;
+}
+
