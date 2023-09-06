@@ -9,9 +9,14 @@
 }
 
 header{
-    height: 100vh;
+    height: 92vh;
+    background-image: url("img/kusatsu.jpg");
 }
 
+body{
+    font-family: marion;
+    color: #1e2b5c;
+}
 h1{
     position: absolute;
     top: 50vh;
@@ -19,3 +24,86 @@ h1{
     font-family: marion;
 }
 
+ul {
+    list-style-type: none; /* リストスタイルを無効にする */
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+
+li {
+    display: inline; /* メニュー項目を水平に配置 */
+    margin-right: 20px; /* 項目間の横のスペース */
+}
+
+nav a {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+a:hover {
+    text-decoration: underline; /* リンクにマウスを乗せたときの下線 */
+}
+
+.container {
+    position: relative;
+    background: #2c3e50;
+    height: 50vh;
+}
+
+.wave {
+    position: absolute;
+    height: 95px;
+    width: 100%;
+    background: #2c3e50;
+    bottom: 0;
+}
+
+.wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+}
+
+.wave::before {
+    width: 55%;
+    height: 109%;
+    background-color: #fff;
+    right: -1.5%;
+    top: 60%;
+}
+.wave::after {
+    width: 55%;
+    height: 100%;
+    background-color: #2c3e50;
+    left: -1.5%;
+    top: 40%;
+}
+
+
+.explain{
+    background-color: #f8dbcb;
+    height: 90vh;
+}
+
+.explain-all{
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え (flexboxを使用) */
+    text-align: center;
+}
+
+.ex-pic{
+    border-radius: 50%;
+    width: 20rem;
+    padding: 20px 50px;
+}
+
+.onsen-title{
+    font-size: 40px;
+}
+
+.onsen{
+    height: 70vh;
+}
