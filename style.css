@@ -19,3 +19,50 @@ h1{
     font-family: marion;
 }
 
+
+
+/*みーぷる*/
+/*
+.manners groups{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.manners div{
+    background-color: #f8dbcb;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* 各div要素を均等に配置 
+    */
+
+.manners_groups {
+    display: flex;
+    flex-wrap: nowrap; /* デフォルトで折り返しを無効にします */
+    justify-content: space-between; /* 要素間に空間を均等に配置 */
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  /* 各子要素のスタイル（オプション） */
+  .manner{
+    background-color: #f8dbcb;
+    flex: 1; /* 幅を均等に分配 */
+    padding: 10px; /* 適切な余白を追加 */
+    text-align: center; /* テキストを中央寄せ */
+    height: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .manner img{
+    width: 200px;
+  }
+
+
+  .footer{
+    background-color: #f8dbcb;
+  }
