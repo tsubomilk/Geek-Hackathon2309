@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -23,8 +25,6 @@ h1{
     right: 50vw;
     font-family: marion;
 }
-
-
 
 /*みーぷる*/
 /*
@@ -181,12 +181,16 @@ h3{
     margin: 10px; */
 }
 
-.kusatsu{
+.kusatsu,.hakone,.kinugawa{
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     /* text-align: center; */
+}
+
+.description{
+    font-family: 'Marck Script', cursive;
 }
 
 .txt-img{
@@ -209,8 +213,14 @@ h3{
 }
 
 .onsen-pic-left{
-    width: 40vw;
+    width: 35vw;
     float: left;
     /* 画像を右寄せにするためにfloatプロパティを使用します。 */
     /* margin-left: 10px; */
+}
+
+
+footer{
+    height: 58px;
+    text-align: center;
 }
