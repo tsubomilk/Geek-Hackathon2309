@@ -187,6 +187,10 @@ h3{
 
 
 /*みーぷる*/
+.manners{
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
 
 .manners groups{
     display: flex;
@@ -194,13 +198,6 @@ h3{
     flex-wrap: wrap;
 }
 
-.manners div{
-    width: 500px;
-    height: 500px;
-    text-align: center;
-    flex-direction: row;
-    justify-content: space-between;
-}
 .manners_groups {
     display: flex;
     flex-wrap: nowrap; /* デフォルトで折り返しを無効にします */
@@ -210,22 +207,38 @@ h3{
 } 
 
 .manner{
+    border-radius: 30px;
+    height: 450px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #f8dbcb;
     flex: 1; /* 幅を均等に分配 */
     padding: 10px; /* 適切な余白を追加 */
     text-align: center; /* テキストを中央寄せ */
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 3px 3px 8px #1e2b5c;
 }
     
 .manner img{
+    margin-top: 50px;
+    margin-bottom: 50px;
     width: 200px;
-    scale: 200%;
+}
+
+.manner p{
+    font-family: marion;
+    color: #1e2b5c;
+    font-size: 16px;
 }
     
 
 footer{
-    height: 58px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
     background-color: #f8dbcb;
 }
