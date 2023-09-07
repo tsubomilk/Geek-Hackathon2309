@@ -26,51 +26,6 @@ h1{
     font-family: marion;
 }
 
-/*みーぷる*/
-/*
-.manners groups{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.manners div{
-    background-color: #f8dbcb;
-    width: 500px;
-    height: 500px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* 各div要素を均等に配置 
-    */
-
-.manners_groups {
-    display: flex;
-    flex-wrap: nowrap; /* デフォルトで折り返しを無効にします */
-    justify-content: space-between; /* 要素間に空間を均等に配置 */
-    padding-left: 50px;
-    padding-right: 50px;
-}
-  
-  /* 各子要素のスタイル（オプション） */
-.manner{
-    background-color: #f8dbcb;
-    flex: 1; /* 幅を均等に分配 */
-    padding: 10px; /* 適切な余白を追加 */
-    text-align: center; /* テキストを中央寄せ */
-    height: 500px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.manner img{
-    width: 200px;
-}
-
-
-.footer{
-    background-color: #f8dbcb;
-}
 ul {
     list-style-type: none; /* リストスタイルを無効にする */
     max-width: 750px;
@@ -132,7 +87,7 @@ a:hover {
 
 .explain{
     background-color: #f8dbcb;
-    height: 80vh;
+    height: 88vh;
 }
 
 h2{
@@ -145,21 +100,12 @@ h2{
     display: flex;
     justify-content: center; /* 水平方向の中央揃え (flexboxを使用) */
     text-align: center;
-}
-
-.map-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.map-pic{
-    width: 95vw;
+    margin-top: 80px;
 }
 
 .ex-pic{
     border-radius: 50%;
-    width: 20rem;
+    width: 25vw;
     padding: 20px 50px;
 }
 
@@ -175,8 +121,25 @@ h2{
     height: 70vh;
 }
 
+/* .back{
+    background-color: white;
+    height: 100px;
+    z-index: 3;
+    display: inline-block;
+} */
+
+.map-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-pic{
+    width: 95vw;
+}
 h3{
     font-size: 40px;
+    margin-bottom: 0;
     /* padding: 15px;
     margin: 10px; */
 }
@@ -186,7 +149,9 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 536px;
     /* text-align: center; */
+    z-index: 2;
 }
 
 .description{
@@ -197,8 +162,8 @@ h3{
 
 }
 .hakone{
-    float: right;
-    margin-right: 112px;
+    /* float: right;
+    margin-right: 112px; */
 }
 
 .onsen-ex{
@@ -220,7 +185,47 @@ h3{
 }
 
 
+/*みーぷる*/
+
+.manners groups{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.manners div{
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.manners_groups {
+    display: flex;
+    flex-wrap: nowrap; /* デフォルトで折り返しを無効にします */
+    justify-content: space-between; /* 要素間に空間を均等に配置 */
+    padding-left: 50px;
+    padding-right: 50px;
+} 
+
+.manner{
+    /* background-color: #f8dbcb; */
+    flex: 1; /* 幅を均等に分配 */
+    padding: 10px; /* 適切な余白を追加 */
+    text-align: center; /* テキストを中央寄せ */
+    height: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+    
+.manner img{
+    width: 200px;
+}
+    
+    
+
 footer{
     height: 58px;
     text-align: center;
+    background-color: #f8dbcb;
 }
