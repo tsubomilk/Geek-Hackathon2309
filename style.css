@@ -50,10 +50,10 @@ h1{
     justify-content: space-between; /* 要素間に空間を均等に配置 */
     padding-left: 50px;
     padding-right: 50px;
-  }
+}
   
   /* 各子要素のスタイル（オプション） */
-  .manner{
+.manner{
     background-color: #f8dbcb;
     flex: 1; /* 幅を均等に分配 */
     padding: 10px; /* 適切な余白を追加 */
@@ -61,16 +61,16 @@ h1{
     height: 500px;
     margin-left: 50px;
     margin-right: 50px;
-  }
+}
 
-  .manner img{
+.manner img{
     width: 200px;
-  }
+}
 
 
-  .footer{
+.footer{
     background-color: #f8dbcb;
-  }
+}
 ul {
     list-style-type: none; /* リストスタイルを無効にする */
     max-width: 750px;
@@ -137,7 +137,8 @@ a:hover {
 
 h2{
     font-size: 72px;
-    padding: 15px;
+    padding: 25px;
+    margin-left: 30px;
 }
 
 .explain-all{
@@ -146,12 +147,25 @@ h2{
     text-align: center;
 }
 
+.map-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-pic{
+    width: 95vw;
+}
+
 .ex-pic{
     border-radius: 50%;
     width: 20rem;
     padding: 20px 50px;
 }
 
+.onsen-all{
+    background-color: #f8dbcb;
+}
 .onsen-title{
     font-size: 72px;
     /* text-align: center; */
@@ -163,12 +177,33 @@ h2{
 
 h3{
     font-size: 40px;
-    padding: 15px;
-    margin: 10px;
+    /* padding: 15px;
+    margin: 10px; */
+}
+
+.kusatsu{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.txt-img{
+
+}
+.hakone{
+    float: right;
+    margin-right: 112px;
+}
+
+.onsen-ex{
+    display: inline-block;
 }
 .onsen-pic{
-    width: 40vw;
+    width: 35vw;
     float: right;
+    padding: 30px;
     /* 画像を右寄せにするためにfloatプロパティを使用します。 */
     /* margin-left: 10px; */
 }
