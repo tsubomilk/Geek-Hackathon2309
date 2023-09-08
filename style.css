@@ -28,7 +28,8 @@ h1{
 
 ul {
     list-style-type: none; /* リストスタイルを無効にする */
-    max-width: 750px;
+    /* max-width: 800px; */
+    text-align: center;
     margin: 0 auto;
 }
 
@@ -41,12 +42,25 @@ li {
 nav a {
     font-size: 24px;
     font-weight: bold;
-
+    text-decoration:none;
+    color: #1e2b5c;
+    padding: 1rem 2rem;
+    border-left: 4px solid;
+    /* border-right: 4px solid ; */
 }
 
-a:hover {
-    text-decoration: underline; /* リンクにマウスを乗せたときの下線 */
+nav a :hover{
+    text-decoration: none;
 }
+
+/* nav a::before {
+    content: "";
+    display: inline-block;
+    width: 4px; 
+    height: 100%;
+    background-color: #000; 
+    margin-right: 8px; 
+} */
 
 .container {
     position: relative;
@@ -109,6 +123,11 @@ h2{
     padding: 20px 50px;
 }
 
+.ex-text{
+    font-size: 24px;
+}
+
+
 .onsen-all{
     background-color: #f8dbcb;
 }
@@ -128,14 +147,55 @@ h2{
     display: inline-block;
 } */
 
+.map{
+    height: auto;
+}
+
 .map-div{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.map-ikaho{
+    position: absolute;
+    left: 46vw;
+    top: 100vh;
+}
+
+.map-kusatsu{
+    position: absolute;
+    left: 36.5vw;
+    top: 222vh;
+}
+
+.map-kinugawa{
+    position: absolute;
+    left: 61vw;
+    top: 221.5vh;
+}
+
+.map-hottarakashi{
+    position: absolute;
+    left: 31.5vw;
+    top: 244.5vh;
+}  
+
+.map-youroukeikoku{
+    position: absolute;
+    left: 56.5vw;
+    top: 248vh;
+}
+
+.map-hakone{
+    position: absolute;
+    left: 47.5vw;
+    top: 263vh;
+}
+
+
 .map-pic{
-    width: 95vw;
+    width: 80vw;
 }
 h3{
     font-size: 40px;
@@ -154,13 +214,25 @@ h3{
     z-index: 2;
 }
 
+.back{
+    background-color: #fff;
+    width: 75vw;
+    height: 55vh;
+    border-radius: 0 50px 50px 0; 
+}
+
+.back-right{
+    background-color: #fff;
+    display: flex;
+    float: right;
+    width: 75vw;
+    height: 55vh;
+    border-radius: 50px 0 0 50px; 
+}
 .description{
     font-family: 'Marck Script', cursive;
 }
 
-.txt-img{
-
-}
 .hakone{
     /* float: right;
     margin-right: 112px; */
@@ -241,4 +313,25 @@ footer{
     padding-bottom: 15px;
     text-align: center;
     background-color: #f8dbcb;
+}
+
+.fuwatAnime {
+    -webkit-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-duration:1.5s;
+    -ms-animation-duration:1.5s;
+    animation-duration:1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+}
+@-webkit-keyframes fuwatAnime {
+    0% { opacity: 0; -webkit-transform: translateY(-20px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fuwatAnime {
+    0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
 }

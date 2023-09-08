@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Onsen</title>
 </head>
 <body>
     <header>
@@ -14,16 +15,16 @@
     </header>
     <nav>
         <ul>
-            <li><a link="">What's The Onsen</a></li>
-            <li><a link="">Top3 Onsen</a></li>
-            <li><a link="">Onsen Map</a></li>
-            <li><a link="">Onsen Manners</a></li>
+            <li><a href="#explain">What's The Onsen</a></li>
+            <li><a href="#map">Onsen Map</a></li>
+            <li><a href="#top3">Top3 Onsen</a></li>
+            <li><a href="#manners">Onsen Manners</a></li>
         </ul>
     </nav>
     <!-- <section class="container">
         <div class="wave"></div>
     </section> -->
-    <section class="explain">
+    <section id="explain" class="explain">
         <h2>What's The Onsen?</h2>
         <div class="explain-all">
             <div>
@@ -41,24 +42,29 @@
             <div>
                 <img class ="ex-pic" src="img/monkey.png" alt="">
                 <p class="ex-text">
-                    Unique experience and relaxation
+                    Unique experience
                 </p>
             </div>
         </div>
     </section>
-    <section class="map">
+    <section id="map" class="map fuwat">
         <h2>Onsen Map around Tokyo</h2>
+        <a href="#ikaho" class="map-ikaho">Ikaho</a>
+        <a href="#kusatsu" class="map-kusatsu">Kusatsu</a>
+        <a href="#kinugawa" class="map-kinugawa">Kinugawa</a>
+        <a href="#hottarakashi" class="map-hottarakashi">Hottarakashi</a>
+        <a href="#youroukeikoku" class="map-youroukeikoku">YourouKeikoku</a>
+        <a href="#hakone" class="map-hakone">Hakone</a>
         <div class="map-div">
             <img class="map-pic" src="img/map.png" alt="">
         </div>
     </section>
     <div class="onsen-all">
-        <h2 class="onsen-title"> Top 3 Onsen around Tokyo</h2>
-        <section class="onsen onsen1">
-            <div class="back">
-
+        <h2 id="top3" class="onsen-title"> Top 3 Onsen around Tokyo</h2>
+        <section id="kusatsu" class="onsen onsen1 fuwat">
+            <div class="">
             </div>
-            <div class="kusatsu">
+            <div class="kusatsu back">
                 <div>
                     <div class="">
                         <h3>No.1 Kusatsu Onsen</h3>
@@ -80,10 +86,9 @@
                     <img class="onsen-pic" src="img/kusatsu.png" alt="">
                 </div>
             </div>
-
         </section>
-        <section class="onsen onsen2">
-            <div class="hakone">
+        <section id="hakone" class="onsen onsen2 fuwat">
+            <div class="hakone back-right">
                 <div>
                     <img class="onsen-pic-left" src="img/hakone.png" alt="">
                 </div>
@@ -105,8 +110,8 @@
 
                 </div>
         </section>
-        <section class="onsen onsen3">
-            <div class="kinugawa">
+        <section id="kinugawa" class="onsen onsen3 fuwat">
+            <div class="kinugawa back">
             <div>
                 <div class="">
                     <h3>No.3 Kinugawa Onsen</h3>
@@ -128,7 +133,7 @@
             </div>
         </section>
     </div>
-        <section class="manners">
+        <section id="manners" class="manners">
             <h2>Onsen Manners</h2>
             <div class="manners_groups">
                 <div class="manner">
@@ -149,4 +154,19 @@
         &copy;TsuboPule
     </footer>
 </body>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.fuwat').css('visibility','hidden');
+      $(window).scroll(function(){
+       var windowHeight = $(window).height(),
+           topWindow = $(window).scrollTop();
+       $('.fuwat').each(function(){
+        var objectPosition = $(this).offset().top;
+        if(topWindow > objectPosition - windowHeight + 200){
+         $(this).addClass("fuwatAnime");
+        }
+       });
+      });
+    });
+    </script>
 </html>
