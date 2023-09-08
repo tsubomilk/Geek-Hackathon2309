@@ -11,8 +11,13 @@
 }
 
 header{
-    height: 92vh;
-    background-image: url("img/kusatsu.jpg");
+    /* height: 92vh; */
+    /* width: 100vw; */
+    height: 117vh;
+    background-image: url("img/fv_done.png");
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body{
