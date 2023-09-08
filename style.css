@@ -13,12 +13,19 @@
 header{
     /* height: 92vh; */
     /* width: 100vw; */
-    height: 117vh;
+    height: 92vh;
     background-image: url("img/fv_done.png");
-    /* background-size: contain; */
+    background-size: contain;
+    /* background-color: rgba(0, 0, 255, 0.9); */
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.heder-pc{
+    height: 100vh;
+}
+
+
 
 body{
     font-family: marion;
@@ -130,6 +137,10 @@ h2{
 
 .ex-text{
     font-size: 24px;
+}
+
+.ex-text-min{
+    font-size: 16px;
 }
 
 
