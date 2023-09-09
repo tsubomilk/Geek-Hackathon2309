@@ -16,11 +16,13 @@ header{
     height: 92vh;
     background-image: url("img/fv_done.png");
     background-size: contain;
-    /* background-color: rgba(0, 0, 255, 0.9); */
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.white-back{
+    background-color: rgba(0, 0, 0, 0.26);
+}
 .heder-pc{
     height: 100vh;
 }
@@ -113,13 +115,17 @@ nav a :hover{
 
 .explain{
     background-color: #f8dbcb;
-    height: 88vh;
+    height: 95vh;
 }
 
 h2{
     font-size: 72px;
     padding: 25px;
     margin-left: 30px;
+}
+
+.explain-div{
+    margin: 20px;
 }
 
 .explain-all{
@@ -139,8 +145,14 @@ h2{
     font-size: 24px;
 }
 
+.ex-text-min-div{
+    
+}
+
 .ex-text-min{
     font-size: 16px;
+    text-align: left;
+    width: 24vw;
 }
 
 
@@ -276,17 +288,17 @@ h3{
 
 #popup {
     display: none; /* label でコントロールするので input は非表示に */
-  }
-  
-  .popup-open {
+}
+
+.popup-open {
     cursor: pointer; /* マウスオーバーでカーソルの形状を変えることで、クリックできる要素だとわかりやすいように */
-  }
-  
-  .popup-overlay {
+}
+
+.popup-overlay {
     display: none; /* input にチェックが入るまでは非表示に */
-  }
-  
-  #popup:checked ~ .popup-overlay {
+}
+
+#popup:checked ~ .popup-overlay {
     display: block;
     z-index: 99999;
     background-color: #00000070;
@@ -295,9 +307,9 @@ h3{
     height: 100vh;
     top: 0;
     left: 0;
-  }
-  
-  .popup-window {
+}
+
+.popup-window {
     width: 90vw;
     max-width: 560px;
     padding: 20px;
@@ -307,22 +319,22 @@ h3{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
-  .popup-text {
+}
+
+.popup-text {
     margin: 0;
-  }
-  
-  .popup-text:not(:last-of-type) {
+}
+
+.popup-text:not(:last-of-type) {
     margin-bottom: 1em
-  }
-  
-  .popup-close {
+}
+
+.popup-close {
     cursor: pointer;
     position: absolute;
     top: -26px;
     right: 0;
-  }
+}
 
 
 
