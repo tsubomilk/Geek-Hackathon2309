@@ -47,7 +47,7 @@ body{
     left: 14vw;
     top: 70vh;
     z-index: -100px;
-    transform: rotate(-20deg);
+    transform: rotate(-10deg);
 }
 
 nav{
@@ -171,7 +171,6 @@ h2{
     text-align: left;
     width: 24vw;
     padding-left: 40px;
-    padding-right: 40px;
     margin: 0;
 }
 
@@ -353,14 +352,20 @@ h3{
 
 
 .onsen-pic-left{
-    display: none;
+    /* display: none; */
     width: 40vw;
     float: left;
     position: absolute;
-    left: 15vw;
-    top: -1.5vh;
+    left: 13vw;
+    top: 0.5vh;
     /* 画像を右寄せにするためにfloatプロパティを使用します。 */
     /* margin-left: 10px; */
+}
+
+.hakone-ex-all{
+    position: absolute;
+    left: 59vw;
+    top: 14.5vh;
 }
 
 .popup-open {
