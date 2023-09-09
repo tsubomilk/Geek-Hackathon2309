@@ -44,11 +44,21 @@ body{
 .onsenmark-nav{
     width: 160px;
     position: absolute;
-    left: 14vw;
-    top: 70vh;
+    left: 6vw;
+    top: 73vh;
     z-index: -100px;
     transform: rotate(-10deg);
 }
+
+.wafuukirakira-nav{
+    width: 50px;
+    position: absolute;
+    left: 18vw;
+    top: 88vh;
+    z-index: -99999px;
+}
+
+
 
 nav{
     height: 60px;
@@ -180,6 +190,7 @@ h2{
 }
 .onsen-title{
     font-size: 72px;
+    background-color: #f8dbcb;
     /* text-align: center; */
 }
 
@@ -356,8 +367,8 @@ h3{
     width: 40vw;
     float: left;
     position: absolute;
-    left: 13vw;
-    top: 0.5vh;
+    left: 15vw;
+    top: -1vh;
     /* 画像を右寄せにするためにfloatプロパティを使用します。 */
     /* margin-left: 10px; */
 }
@@ -457,6 +468,14 @@ h3{
     right: 0;
 }
 
+.Polka_v2 {
+    background-image:  radial-gradient(#d9532a 1px, transparent 1px), radial-gradient(#d9532a 1px, #f8dbcb 1px);
+    background-size: 40px 40px;
+    background-position: 0 0,20px 20px;
+}
+
+
+
 
 
 /*みーぷる*/
@@ -501,10 +520,16 @@ h3{
     width: 200px;
 }
 
-.manner p{
+.manner-title{
+    font-size: 20px;
     font-family: marion;
     color: #1e2b5c;
-    font-size: 20px;
+}
+
+.manner-ex{
+    font-family: marion;
+    color: #1e2b5c;
+    font-size: 16px;
     text-align: left;
 }
     
