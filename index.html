@@ -11,9 +11,9 @@
 </head>
 <body>
     <header>
-        <div class="white-back">
+        <!-- <div class="white-back">
             <h1>TsuboPule</h1>            
-        </div>
+        </div> -->
         <!-- <img class ="header-pc" src="img/fv_done.png" alt=""> -->
 
     </header>
@@ -25,6 +25,7 @@
             <li><a href="#manners">Onsen Manners</a></li>
         </ul>
     </nav>
+    <img class ="onsenmark-nav" src="img/onsenmark.PNG" alt="">
     <!-- <section class="container">
         <div class="wave"></div>
     </section> -->
@@ -36,14 +37,14 @@
                 <p class="ex-text">
                     Hot water from the Earth
                 </p>
-                <div class="ex-text-min-div">
+                <!-- <div class="ex-text-min-div"> -->
                 <p class="ex-text-min">
                     Hot springs are warm waters that spring from deep within the earth.
                     There is hot magma inside the Earth, which heats the groundwater. 
                     The warm water springs to the surface and we can enjoy hot springs. 
                     It is the heat of the earth that creates this special natural phenomenon.
                 </p>                    
-                </div>
+                <!-- </div> -->
             </div>
             <div class="explain-div">
                 <img class ="ex-pic" src="img/health.png" alt="">
@@ -67,22 +68,29 @@
     </section>
     <section id="map" class="map fuwat">
         <h2>Onsen Map around Tokyo</h2>
-        <a href="#ikaho" class="map-ikaho">Ikaho</a>
-        <a href="#kusatsu" class="map-kusatsu">Kusatsu</a>
-        <a href="#kinugawa" class="map-kinugawa">Kinugawa</a>
-        <a href="#hottarakashi" class="map-hottarakashi">Hottarakashi</a>
+        <!-- <a href="#ikaho" class="map-ikaho map-name">Ikaho</a> -->
+        <a href="#kusatsu" class="map-kusatsu map-name">Kusatsu</a>
+        <a href="#kinugawa" class="map-kinugawa map-name">Kinugawa</a>
+        <!-- <a href="#hottarakashi" class="map-hottarakashi map-name">Hottarakashi</a> -->
 
-        <a href="#hakone" class="map-hakone">Hakone</a>
+        <a href="#hakone" class="map-hakone map-name">Hakone</a>
         <div class="map-div">
             <img class="map-pic" src="img/map.png" alt="">
         </div>
-        <input type="checkbox" id="popup">
-        <label class="popup-open map-youroukeikoku" for="popup">YourouKeikoku</label>
-        <a href="#youroukeikoku" class=""></a>
-        <div class="popup-overlay">
-            <div class="popup-window">
-                <p class="popup-text">ポップアップの中身のテキスト</p>
-                <label class="popup-close" for="popup">
+        <!-- <a href="#youroukeikoku" class=""></a> -->
+
+
+
+        <input type="checkbox" id="popup-yourou">
+        <label class="popup-open map-youroukeikoku map-name" for="popup-yourou">YourouKeikoku</label>
+        <div class="popup-overlay-yourou">
+            <div class="popup-window popup-youroukeikoku">
+                <p class="popup-title">YourouKeikoku Onsen</p>
+                <div class="map-popup-group">
+                    <img class="map-popup-pic" src="img/map_yourou.png" alt="">
+                    <p class="popup-text">Yorokeikoku Onsen in Chiba is a quiet hot spring area surrounded by beautiful nature. You can enjoy a luxurious time soaking in a hot spring while listening to the sound of a mountain stream. Outdoor enthusiasts can also enjoy hiking and nature walks.</p>
+                </div>
+                <label class="popup-close" for="popup-yourou">
                     <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
                         <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
                         <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
@@ -90,12 +98,55 @@
                 </label>
             </div>
         </div>
+
+
+
+        <input type="checkbox" id="popup-ikaho">
+        <label class="popup-open map-ikaho map-name" for="popup-ikaho">Ikaho</label>
+        <div class="popup-overlay-ikaho">
+            <div class="popup-window">
+                <p class="popup-title">Ikaho Onsen</p>
+                <div class="map-popup-group">
+                    <img class="map-popup-pic" src="img/map_ikaho.jpg" alt="">
+                    <p class="popup-text">Ikaho Onsen in Gunma is famous for its 365 stone steps, the number of which is equal to the number of days in a year. Enjoy the hot springs flowing directly from the source and experience the atmosphere of a hot spring town. You can balance relaxation and sightseeing.</p>
+                </div>
+                <label class="popup-close" for="popup-ikaho">
+                    <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
+                        <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
+                    </svg>
+                </label>
+            </div>
+        </div>
+
+
+
+        <input type="checkbox" id="popup-hottarakashi">
+        <label class="popup-open map-hottarakashi map-name" for="popup-hottarakashi">Hottarakashi</label>
+        <div class="popup-overlay-hottarakashi">
+            <div class="popup-window">
+                <p class="popup-title">Hottarakashi Onsen</p>
+                <div class="map-popup-group">
+                    <img class="map-popup-pic" src="img/map_hottarakasi.JPG" alt="">
+                    <p class="popup-text">Hottarakashi Onsen in Yamanashi is a quiet hot spring area surrounded by a beautiful natural environment. You can enjoy the view of the mountains while soaking in the bathtub. You can even watch the sunrise! It's the perfect place to spend some time relaxing and pampering.</p>
+                </div>
+                <label class="popup-close" for="popup-hottarakashi">
+                    <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0" y1="0" x2="18" y2="18" stroke="white" stroke-width="3"></line>
+                        <line x1="0" y1="18" x2="18" y2="0" stroke="white" stroke-width="3"></line>
+                    </svg>
+                </label>
+            </div>
+        </div>
+
+
+
+
+
     </section>
     <div class="onsen-all">
         <h2 id="top3" class="onsen-title"> Top 3 Onsen around Tokyo</h2>
         <section id="kusatsu" class="onsen onsen1 fuwat">
-            <div class="">
-            </div>
             <div class="kusatsu back">
                 <div>
                     <div class="">
@@ -114,9 +165,9 @@
                         </p>
                     </div>
                 </div>
-                <div>
-                    <img class="onsen-pic" src="img/kusatsu.png" alt="">
-                </div>
+                <img class="onsen-pic top3-kusatu-pic" src="img/kusatsu.png" alt="">
+                <!-- <div>
+                </div> -->
             </div>
         </section>
         <section id="hakone" class="onsen onsen2 fuwat">
@@ -129,7 +180,7 @@
                         <h3>No.2 Hakone Onsen</h3>
                         <p class="description">Nature's Embrace, Paradise of Beauty and Tranquility</p>
                     </div>
-                    <div>
+                    <div class="onsen-ex-right">
                         <p class="onsen-ex">
                             Hakone Onsen in Kanagawa<br>
                             is located at the foot of Mt. Fuji<br>

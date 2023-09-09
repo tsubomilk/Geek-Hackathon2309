@@ -14,18 +14,18 @@ header{
     /* height: 92vh; */
     /* width: 100vw; */
     height: 92vh;
-    background-image: url("img/fv_done.png");
+    background-image: url("img/fv_40_syou_font_gyou.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
-.white-back{
+/* .white-back{
     background-color: rgba(0, 0, 0, 0.26);
 }
 .heder-pc{
-    height: 100vh;
-}
+    height: 60vh;
+} */
 
 
 
@@ -33,11 +33,26 @@ body{
     font-family: marion;
     color: #1e2b5c;
 }
-h1{
+/* h1{
     position: absolute;
     top: 50vh;
     right: 50vw;
     font-family: marion;
+} */
+
+
+.onsenmark-nav{
+    width: 160px;
+    position: absolute;
+    left: 14vw;
+    top: 70vh;
+    z-index: -100px;
+    transform: rotate(-20deg);
+}
+
+nav{
+    height: 60px;
+    margin: 0;
 }
 
 ul {
@@ -63,8 +78,9 @@ nav a {
     /* border-right: 4px solid ; */
 }
 
-nav a :hover{
+nav a:hover{
     text-decoration: none;
+    color: #68B952;
 }
 
 /* nav a::before {
@@ -124,15 +140,16 @@ h2{
     margin-left: 30px;
 }
 
-.explain-div{
+/* .explain-div{
     margin: 20px;
-}
+} */
 
 .explain-all{
     display: flex;
     justify-content: center; /* 水平方向の中央揃え (flexboxを使用) */
     text-align: center;
-    margin-top: 80px;
+    /* margin-top: 80px; */
+    padding-bottom: 50px;
 }
 
 .ex-pic{
@@ -145,14 +162,17 @@ h2{
     font-size: 24px;
 }
 
-.ex-text-min-div{
-    
-}
+/* .ex-text-min-div{
+
+} */
 
 .ex-text-min{
     font-size: 16px;
     text-align: left;
     width: 24vw;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0;
 }
 
 
@@ -185,46 +205,79 @@ h2{
     align-items: center;
 }
 
+.map-name{
+    font-size: 24px;
+    text-decoration: none;
+    color: #1e2b5c;
+}
+
+.map-name:hover{
+    color: #d9532a;
+}
+
 .map-ikaho{
     position: absolute;
-    left: 46vw;
-    top: 30vh;
+    left: 45vw;
+    top: 28vh;
 }
 
 .map-kusatsu{
     position: absolute;
-    left: 36.5vw;
-    top: 37.5vh;
+    left: 30vw;
+    top: 43.5vh;
 }
 
 .map-kinugawa{
     position: absolute;
-    left: 61vw;
-    top: 37vh;
+    left: 70vw;
+    top: 43vh;
 }
 
 .map-hottarakashi{
     position: absolute;
-    left: 31.5vw;
-    top: 60vh;
+    left: 21vw;
+    top: 81.3vh;
 }  
 
 .map-youroukeikoku{
     position: absolute;
-    left: 56.5vw;
-    top: 63vh;
+    left: 66vw;
+    top: 86.5vh;
 }
 
 .map-hakone{
     position: absolute;
-    left: 47.5vw;
-    top: 78.5vh;
+    left: 47vw;
+    top: 112vh;
 }
 
 
 .map-pic{
     width: 80vw;
 }
+
+.popup-title{
+    font-size: 32px;
+    text-align: center;
+}
+
+.map-popup-group{
+    display: flex;
+    justify-content: center;
+}
+
+.map-popup-pic{
+    width: 200px;
+    margin-right: 30px;
+}
+
+.popup-text{
+    font-size: 16px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
 h3{
     font-size: 40px;
     margin-bottom: 0;
@@ -235,7 +288,7 @@ h3{
 .kusatsu,.hakone,.kinugawa{
     margin: 0;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     height: 536px;
     /* text-align: center; */
@@ -243,71 +296,134 @@ h3{
 }
 
 .back{
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.75); 
     width: 75vw;
     height: 55vh;
     border-radius: 0 50px 50px 0; 
-    box-shadow: 18px 21px 21px -5px #a6a6a6;
+    box-shadow: 18px 21px 21px -10px #2c3e50;
+    padding-left: 10vw;
 }
 
 .back-right{
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.75);
     display: flex;
     float: right;
     width: 75vw;
     height: 55vh;
     border-radius: 50px 0 0 50px; 
-    box-shadow: -18px 18px 21px -5px #a6a6a6;
+    box-shadow: -18px 18px 21px -10px #2c3e50;
 }
 .description{
     font-family: 'Marck Script', cursive;
 }
 
-.hakone{
-    /* float: right;
-    margin-right: 112px; */
+/* .hakone{
+    float: right;
+    margin-right: 112px;
+} */
+
+
+.onsen-ex-right {
+    text-align: right; /* p要素の中身を右詰めにする */
 }
 
-.onsen-ex{
-    display: inline-block;
+.onsen-ex {
+    text-align: left; /* p要素の中身を左詰めにする */
 }
+
+/* div要素を右詰めにするためのスタイル */
+.onsen-ex-right {
+    width: 100%; /* 100%の幅を指定 */
+    margin-right: 0; /* 右の余白を0にする */
+    margin-left: auto; /* 左の余白を自動計算 */
+}
+
+
+
 .onsen-pic{
-    width: 35vw;
+    width: 40vw;
     float: right;
-    padding: 30px;
+    position: absolute;
+    left: 45vw;
+    top: -1.5vh;
     /* 画像を右寄せにするためにfloatプロパティを使用します。 */
     /* margin-left: 10px; */
 }
+
+
 
 .onsen-pic-left{
-    width: 35vw;
+    display: none;
+    width: 40vw;
     float: left;
+    position: absolute;
+    left: 15vw;
+    top: -1.5vh;
     /* 画像を右寄せにするためにfloatプロパティを使用します。 */
     /* margin-left: 10px; */
-}
-
-#popup {
-    display: none; /* label でコントロールするので input は非表示に */
 }
 
 .popup-open {
     cursor: pointer; /* マウスオーバーでカーソルの形状を変えることで、クリックできる要素だとわかりやすいように */
 }
 
-.popup-overlay {
+#popup-yourou {
+    display: none; /* label でコントロールするので input は非表示に */
+}
+
+.popup-overlay-yourou {
     display: none; /* input にチェックが入るまでは非表示に */
 }
 
-#popup:checked ~ .popup-overlay {
+#popup-yourou:checked ~ .popup-overlay-yourou {
     display: block;
     z-index: 99999;
     background-color: #00000070;
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     top: 0;
     left: 0;
 }
+
+#popup-ikaho {
+    display: none; /* label でコントロールするので input は非表示に */
+}
+
+.popup-overlay-ikaho {
+    display: none; /* input にチェックが入るまでは非表示に */
+}
+
+#popup-ikaho:checked ~ .popup-overlay-ikaho {
+    display: block;
+    z-index: 99999;
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#popup-hottarakashi {
+    display: none;
+}
+
+.popup-overlay-hottarakashi {
+    display: none;
+}
+
+#popup-hottarakashi:checked ~ .popup-overlay-hottarakashi {
+    display: block;
+    z-index: 99999;
+    background-color: #00000070;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
 
 .popup-window {
     width: 90vw;
@@ -315,10 +431,10 @@ h3{
     padding: 20px;
     background-color: #ffffff;
     border-radius: 6px;
-    position: fixed;
+    position: absolute;
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .popup-text {
