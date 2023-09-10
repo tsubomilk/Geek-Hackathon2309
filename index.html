@@ -17,23 +17,25 @@
         <!-- <img class ="header-pc" src="img/fv_done.png" alt=""> -->
 
     </header>
-    <img class ="wafuukirakira-nav" src="img/wafuu-kirakira.jpg" alt="">
+    <!-- <img class ="wafuukirakira-nav" src="img/wafuu-kirakira.jpg" alt=""> -->
     <!-- <img class ="onsenmark-nav" src="img/wafuu-kirakira.jpg" alt="">
     <img class ="onsenmark-nav" src="img/wafuu-kirakira.jpg" alt="">
     <img class ="onsenmark-nav" src="img/wafuu-kirakira.jpg" alt=""> -->
-    <nav>
+    
+    <nav class="nav-kotei">
         <ul>
             <li><a href="#explain">What's the Onsen</a></li>
-            <li><a href="#map">Onsen Map</a></li>
+            <li class="sen"><a href="#map">Onsen Map</a></li>
+            <img class ="onsenmark-nav" src="img/onsenmark.jpg" alt="">
             <li><a href="#top3">Top3 Onsen</a></li>
-            <li><a href="#manners">Onsen Manners</a></li>
+            <li class="sen"><a href="#manners">Onsen Manners</a></li>
         </ul>
     </nav>
-    <img class ="onsenmark-nav" src="img/onsenmark.PNG" alt="">
+    <!-- <img class ="onsenmark-nav" src="img/onsenmark.PNG" alt=""> -->
     <!-- <section class="container">
         <div class="wave"></div>
     </section> -->
-    <section id="explain" class="explain">
+    <section id="explain" class="explain Polka_v2">
         <h2>What's the Onsen?</h2>
         <div class="explain-all">
             <div class="explain-div">
@@ -86,10 +88,10 @@
 
 
         <input type="checkbox" id="popup-yourou">
-        <label class="popup-open map-youroukeikoku map-name" for="popup-yourou">YouroKeikoku</label>
+        <label class="popup-open map-youroukeikoku map-name" for="popup-yourou">YoroKeikoku</label>
         <div class="popup-overlay-yourou">
             <div class="popup-window popup-youroukeikoku">
-                <p class="popup-title">YouroKeikoku Onsen</p>
+                <p class="popup-title">YoroKeikoku Onsen</p>
                 <div class="map-popup-group">
                     <img class="map-popup-pic" src="img/map_yourou.png" alt="">
                     <p class="popup-text">Yorokeikoku Onsen in Chiba is a quiet hot spring area surrounded by beautiful nature. You can enjoy a luxurious time soaking in a hot spring while listening to the sound of a mountain stream. Outdoor enthusiasts can also enjoy hiking and nature walks.</p>
@@ -223,24 +225,24 @@
         <section id="manners" class="manners">
             <h2>Onsen Manners</h2>
             <div class="manners_groups">
-                <div class="manner">
+                <div class="manner Polka_v2">
                     <img src="./img/1manner_done.png" alt="">
-                    <p class="manner-title">Do not soak towels or hair</p>
+                    <p class="manner-title">Don't soak towels or hair</p>
                     <p class="manner-ex">Enter the hot spring naked. Do not put towels in hot springs. Tie your hair to prevent it from getting into the water.</p>
                 </div>
-                <div class="manner">
+                <div class="manner Polka_v2">
                     <img src="./img/2manner_done.png" alt="">
                     <p class="manner-title">Wash your body</p>
                     <p class="manner-ex">Wash your body before taking a bath. Let's go into the hot water in order from the feet. Make sure there are no people around before pouring hot water.</p>
                 </div>
-                <div class="manner">
+                <div class="manner Polka_v2">
                     <img src="./img/3manner_done.png" alt="">
                     <p class="manner-title">Respect the atmosphere </p>
                     <p class="manner-ex">Lots of people relax in hot springs, so enjoy the environment. Please do not disrupt the environment by talking loudly.</p>
                 </div>
             </div>
         </section>    
-    <footer>
+    <footer class="Polka_v2">
         &copy;TsuboPule
     </footer>
 </body>
@@ -258,5 +260,23 @@
        });
       });
     });
-    </script>
+
+    $(document).ready(
+    $(function() {
+  var menu = $('.nav-kotei'),
+  offset = menu.offset();
+  $(window).scroll(function () {
+    if($(window).scrollTop() > offset.top) {
+      menu.addClass('fixed');
+    } else {
+      menu.removeClass('fixed');
+    }
+  });
+}))
+
+
+
+
+</script>
+
 </html>

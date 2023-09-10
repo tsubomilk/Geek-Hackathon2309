@@ -13,8 +13,8 @@
 header{
     /* height: 92vh; */
     /* width: 100vw; */
-    height: 92vh;
-    background-image: url("img/fv_40_syou_font_gyou.png");
+    height: 84vh;
+    background-image: url("img/fv_done.png");
     background-size: contain;
     background-repeat: no-repeat;
     /* background-size: cover; */
@@ -42,12 +42,11 @@ body{
 
 
 .onsenmark-nav{
-    width: 160px;
-    position: absolute;
-    left: 6vw;
-    top: 73vh;
-    z-index: -100px;
-    transform: rotate(-10deg);
+    width: 120px;
+    /* left: 6vw;
+    top: 73vh; */
+    /* z-index: -100px; */
+    /* transform: rotate(-10deg); */
 }
 
 .wafuukirakira-nav{
@@ -61,8 +60,20 @@ body{
 
 
 nav{
-    height: 60px;
+    /* position: fixed; */
+    height: 18vh;
     margin: 0;
+    background: #fff;
+}
+
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;   
+    padding: 20px;
+    transition: .5s;
 }
 
 ul {
@@ -84,8 +95,11 @@ nav a {
     text-decoration:none;
     color: #1e2b5c;
     padding: 1rem 2rem;
-    border-left: 4px solid;
     /* border-right: 4px solid ; */
+}
+
+.sen{
+    border-left: 2px solid;
 }
 
 nav a:hover{
@@ -190,7 +204,6 @@ h2{
 }
 .onsen-title{
     font-size: 72px;
-    background-color: #f8dbcb;
     /* text-align: center; */
 }
 
@@ -469,7 +482,7 @@ h3{
 }
 
 .Polka_v2 {
-    background-image:  radial-gradient(#d9532a 1px, transparent 1px), radial-gradient(#d9532a 1px, #f8dbcb 1px);
+    background-image:  radial-gradient(rgba(255, 255, 255, 0.5) 2px, transparent 1px), radial-gradient(rgba(255, 255, 255, 0.5) 2px, #f8dbcb 1px);
     background-size: 40px 40px;
     background-position: 0 0,20px 20px;
 }
