@@ -618,6 +618,7 @@ footer{
     }
 
     .map-pic-sp{
+        display: block;
         width: 90vw;
     }
 
