@@ -279,6 +279,10 @@ h2{
     width: 80vw;
 }
 
+.map-pic-sp{
+    display: none;
+}
+
 .popup-title{
     font-size: 32px;
     text-align: center;
@@ -573,4 +577,107 @@ footer{
 @keyframes fuwatAnime {
     0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
     100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+@media all and (max-width: 480px) {
+    /*　画面サイズが480pxからはここを読み込む　*/
+    header{
+        background-image: url("img/fv_sm.png");
+        height: 100vh;
+    }
+    nav{
+        display: none;
+    }
+
+    h2{
+        font-size: 32px;
+        margin: 0;
+    }
+
+    .explain{
+        height: 110vh;
+    }
+    .explain-all{
+        display: block;
+    }
+
+    .ex-text-min{
+        width: 88vw;
+    }
+
+    .map-name{
+        display: none;
+    }
+
+    .map-youroukeikoku{
+        left: 51vw;
+    }
+
+    .map-pic{
+        display: none;
+    }
+
+    .map-pic-sp{
+        width: 90vw;
+    }
+
+    .top3-kusatu-pic{
+        /* display: none; */
+    }
+
+    .onsen-ex-top{
+        /* position: absolute;
+        top: 20px; */
+    }
+
+    .text-all{
+        /* position: absolute;
+        top: 20px; */
+    }
+
+    .onsen-pic{
+        left: 16vw;
+        top: 45.5vh;
+    }
+
+    .onsen-pic-left{
+        left: 46vw;
+        top: 40vh;
+    }
+
+    .hakone-ex-all{
+        left: 31vw;
+        top: 4.5vh;
+    }
+
+    .kusatsu-text-all{
+        position: relative;
+        top: -70px;
+        left: -15px;
+    }
+
+    .back{
+        height: 65vh;
+    }
+
+    .manners_groups{
+        display: block;
+    }
+
+    .onsen-title{
+        font-size: 32px;
+    }
+
+    .manners_groups{
+        padding: 0;
+    }
+
+    .manner{
+        margin-bottom: 30px;
+        padding: 39px 39px;
+    }
+
+    .manner-ex{
+        text-align: center;
+    }
 }
