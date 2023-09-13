@@ -9,19 +9,26 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Onsen</title>
+    <script>
+        window.onload = function() {
+        const spinner = document.getElementById('loading');
+        spinner.classList.add('loaded');
+        }
+    </script>
 </head>
 <body>
-    <header>
+    <!-- ローディング画面 -->
+    <div id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <header fetchpriority="high">
         <!-- <div class="white-back">
             <h1>TsuboPule</h1>            
         </div> -->
         <!-- <img class ="header-pc" src="img/fv_done.png" alt=""> -->
 
     </header>
-    <!-- <img class ="wafuukirakira-nav" src="img/wafuu-kirakira.jpg" alt=""> -->
-    <!-- <img class ="onsenmark-nav" src="img/wafuu-kirakira.jpg" alt="">
-    <img class ="onsenmark-nav" src="img/wafuu-kirakira.jpg" alt="">
-    <img class ="onsenmark-nav" src="img/wafuu-kirakira.jpg" alt=""> -->
     
     <nav class="nav-kotei">
         <ul>
