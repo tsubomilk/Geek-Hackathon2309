@@ -28,12 +28,21 @@
     <!-- 180x180 ピクセルの高解像度ファビコン（PNG形式） -->
     <link rel="icon" type="image/png" href="img/favicon.ico" sizes="180x180">
 
-    <script>
-        window.onload = function() {
-        const spinner = document.getElementById('loading');
-        spinner.classList.add('loaded');
-        }
-    </script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1K131BK7G4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1K131BK7G4');
+</script>
+<script>
+window.onload = function() {
+    const spinner = document.getElementById('loading');
+    spinner.classList.add('loaded');
+}
+</script>
 </head>
 <body>
     <!-- ローディング画面 -->
