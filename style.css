@@ -583,7 +583,8 @@ footer{
     /*　画面サイズが480pxからはここを読み込む　*/
     header{
         background-image: url("img/fv_sm.png");
-        height: 100vh;
+        width: 100vw;
+        background-size: cover;
     }
     nav{
         display: none;
@@ -595,7 +596,7 @@ footer{
     }
 
     .explain{
-        height: 110vh;
+        /* height: 104vh; */
     }
     .explain-all{
         display: block;
@@ -603,6 +604,10 @@ footer{
 
     .ex-text-min{
         width: 88vw;
+    }
+
+    .ex-pic{
+        display: none;
     }
 
     .map-name{
@@ -643,7 +648,11 @@ footer{
 
     .onsen-pic-left{
         left: 46vw;
-        top: 40vh;
+        top: 46vh;
+    }
+
+    .back-right{
+        height: 65vh;
     }
 
     .hakone-ex-all{
