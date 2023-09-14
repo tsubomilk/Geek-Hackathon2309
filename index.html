@@ -51,13 +51,8 @@ window.onload = function() {
     </div>
 
     <header fetchpriority="high">
-        <!-- <div class="white-back">
-            <h1>TsuboPule</h1>            
-        </div> -->
-        <!-- <img class ="header-pc" src="img/fv_done.png" alt=""> -->
-
     </header>
-    
+
     <nav class="nav-kotei">
         <ul>
             <li><a href="#explain">What's the Onsen</a></li>
@@ -67,12 +62,8 @@ window.onload = function() {
             <li class="sen"><a href="#manners">Onsen Manners</a></li>
         </ul>
     </nav>
-    <!-- <img class ="onsenmark-nav" src="img/onsenmark.PNG" alt=""> -->
-    <!-- <section class="container">
-        <div class="wave"></div>
-    </section> -->
-    <section id="explain" class="explain Polka_v2">
-        <h2>What's the Onsen?</h2>
+    <section class="explain Polka_v2">
+        <h2 id="explain">What's the Onsen?</h2>
         <div class="explain-all">
             <div class="explain-div">
                 <img class ="ex-pic" src="img/hot-water.png" alt="">
@@ -108,8 +99,8 @@ window.onload = function() {
             </div>
         </div>
     </section>
-    <section id="map" class="map fuwat">
-        <h2>Onsen Map around Tokyo</h2>
+    <section class="map fuwat">
+        <h2 id="map">Onsen Map around Tokyo</h2>
         <!-- <a href="#ikaho" class="map-ikaho map-name">Ikaho</a> -->
         <a href="#kusatsu" class="map-kusatsu map-name">Kusatsu</a>
         <a href="#kinugawa" class="map-kinugawa map-name">Kinugawa</a>
@@ -187,7 +178,7 @@ window.onload = function() {
 
 
     </section>
-    <div class="onsen-all bg_pattern Polka_v2">
+    <div class="bg_pattern Polka_v2">
         <h2 id="top3" class="onsen-title"> Top 3 Onsen around Tokyo</h2>
         <section id="kusatsu" class="onsen onsen1 fuwat">
             <div class="kusatsu back">
@@ -257,8 +248,8 @@ window.onload = function() {
             </div>
         </section>
     </div>
-        <section id="manners" class="manners">
-            <h2>Onsen Manners</h2>
+        <section class="manners">
+            <h2 id="manners">Onsen Manners</h2>
             <div class="manners_groups">
                 <div class="manner Polka_v2">
                     <img src="./img/1manner_done.png" alt="">
@@ -308,10 +299,27 @@ window.onload = function() {
     }
   });
 }))
-
-
-
-
+</script>
+<script>
+    $(function(){
+  var headerHeight = $('header').outerHeight() - 500; // ヘッダーについているID、クラス名など、余白を開けたい場合は + 10を追記する。
+  var urlHash = location.hash; // ハッシュ値があればページ内スクロール
+  if(urlHash) { // 外部リンクからのクリック時
+    $('body,html').stop().scrollTop(0); // スクロールを0に戻す
+    setTimeout(function(){ // ロード時の処理を待ち、時間差でスクロール実行
+      var target = $(urlHash);
+      var position = target.offset().top - headerHeight;
+      $('body,html').stop().animate({scrollTop:position}, 500); // スクロール速度ミリ秒
+    }, 100);
+  }
+  $('a[href^="#"]').click(function(){ // 通常のクリック時
+    var href= $(this).attr("href"); // ページ内リンク先を取得
+    var target = $(href);
+    var position = target.offset().top - headerHeight;
+    $('body,html').stop().animate({scrollTop:position}, 500); // スクロール速度ミリ秒
+    return false; // #付与なし、付与したい場合は、true
+  });
+});
 </script>
 
 </html>
